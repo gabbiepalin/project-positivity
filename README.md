@@ -1,1 +1,2 @@
 # project-positivity
+Motivation Hub a web application that will deliver daily inspiration through motivational quotes and captivating images. Users can explore a curated collection of quotes from renowned authors and thinkers, accompanied by visually stunning images. With interactive features and customization options, Motivation Hub hopes to provides a user-friendly and uplifting experience for those seeking daily motivation and positivity.
