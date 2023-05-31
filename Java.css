@@ -1,0 +1,33 @@
+.positivity-quote {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.positivity-quote img {
+    height: 430px;
+    object-fit: cover;
+}
+
+.positivity-quote .generate-positivity-btn {
+    padding: 8px 20px;
+    border: none;
+    border-left: 4px solid pink;
+    border-right: 4px solid pink;
+    margin: 24px 0;
+    font-size: 20px;
+    color: blueviolet;
+    background: lightblue;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.positivity-quote .generate-positivity-btn:hover {
+    padding: 8px 36px;
+    border-left: 8px solid pink;
+    border-right: 8px solid pink;
+    letter-spacing: 3px;
+}
+
+.positivity-quote .quote-author {
+    margin: 8px;
+}

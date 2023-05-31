@@ -1,41 +1,17 @@
-let text = "my quote";
-let author = "my author";
+const generatePositivityBtn = document.querySelector(".generate-positivity-btn");
+const positiveImage = document.querySelector(".positivity-quote img");
+const positiveQuote = document.querySelector(".positivity-quote .positive-quote");
+const quoteAuthor = document.querySelector(".positivity-quote .quote-author");
 
-quote = {
-  text: text,
-  author: author,
+const generatePositivityQuote = () => {
+  console.log("generatePositivityQuote");
+  fetch("https://type.fit/api/quotes")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+  });
 }
 
-console.log(quote.text);
-
-let text2= "my quote2";
-let author2= "my author2";
-
-quote2 = {
-  text: text2,
-  author: author2
-}
-console.log(quote2.text);
-
-quote3 = {
-  text: "my quote 3",
-  author: "Rodger Steel"
-}
-console.log(quote3.text, quote3.author);
-
-let quotes = [];
-
-quotes.push(quote);
-quotes.push(quote2);
-quotes.push(quote3);
-
-// Node server 
-for(let i=0; i < quotes.length; i++)
-{
-  console.log(quotes[i]);
-}
-quotes.forEach(quote => console.log(quote));
-
-
-
-// console.log(text);
+generatePositivityBtn.addEventListener("click", generatePositivityQuote);
