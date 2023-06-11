@@ -41,3 +41,8 @@ console.log(animals.length)
 for(let i = 0; i < animals.length; i++) {
     console.log('For ', animals[i]+ i); 
 }
+
+function sum(a, b) {
+    console.log(a + b)
+}
+sum(10, 6)
