@@ -46,3 +46,19 @@ function sum(a, b) {
     console.log(a + b)
 }
 sum(10, 6)
+
+const myText = "the weather is cold";
+const newstring = myText.replace("cold", "warm");
+console.log(newstring);
+
+function favouriteAnimal(boat, animal){
+    return boat + " " + animal + " is my favorite animal!"
+    
+}
+console.log(favouriteAnimal('jetboat', 'elephant'));
+
+function showMessage(){
+    alert( 'Hello everyone!' );
+}
+showMessage();
+showMessage();
