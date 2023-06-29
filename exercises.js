@@ -58,7 +58,27 @@ function favouriteAnimal(boat, animal){
 console.log(favouriteAnimal('jetboat', 'elephant'));
 
 function showMessage(){
-    alert( 'Hello everyone!' );
+    console.log( 'Hello everyone!' );
 }
 showMessage();
 showMessage();
+
+let sayHi = () => console.log("Hello");
+
+sayHi();
+
+const readline = require ('readline') .createInterface ({
+    input: process.stdin,
+    output: process.stdout
+});
+
+readline.question ('Whats your age?', age => {
+    console.log ("You are " + age + " years old!");
+    readline.close();
+});
+
+// let welcome = (age < 18) ? 
+    // () => console.log('Hello!'):
+    // () => console.log("Greetings!");
+
+// welcome();
