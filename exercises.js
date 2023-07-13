@@ -36,6 +36,7 @@ for(let i = 0; i < fruits.length; i++) {
 console.log(fruits.length);
 
 let animals = ['dog', 'cat', 'elephant', 'lion'];
+HEAD
 console.log(animals.length);
 
 for(let i = 0; i < animals.length; i++) {
@@ -45,3 +46,51 @@ for(let i = 0; i < animals.length; i++) {
 let Price = 10;
 Price += 5;
 console.log(Price)
+
+console.log(animals.length)
+
+for(let i = 0; i < animals.length; i++) {
+    console.log('For ', animals[i]+ i); 
+}
+
+function sum(a, b) {
+    console.log(a + b)
+}
+sum(10, 6)
+
+const myText = "the weather is cold";
+const newstring = myText.replace("cold", "warm");
+console.log(newstring);
+
+function favouriteAnimal(boat, animal){
+    return boat + " " + animal + " is my favorite animal!"
+    
+}
+console.log(favouriteAnimal('jetboat', 'elephant'));
+
+function showMessage(){
+    console.log( 'Hello everyone!' );
+}
+showMessage();
+showMessage();
+
+let sayHi = () => console.log("Hello");
+
+sayHi();
+
+const readline = require ('readline') .createInterface ({
+    input: process.stdin,
+    output: process.stdout
+});
+
+readline.question ('Whats your age?', age => {
+    console.log ("You are " + age + " years old!");
+    readline.close();
+});
+
+// let welcome = (age < 18) ? 
+    // () => console.log('Hello!'):
+    // () => console.log("Greetings!");
+
+// welcome();
+
