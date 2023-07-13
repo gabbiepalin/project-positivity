@@ -34,3 +34,14 @@ for(let i = 0; i < fruits.length; i++) {
 }
 
 console.log(fruits.length);
+
+let animals = ['dog', 'cat', 'elephant', 'lion'];
+console.log(animals.length);
+
+for(let i = 0; i < animals.length; i++) {
+    console.log('for', animals[i]+ i);
+}
+
+let Price = 10;
+Price += 5;
+console.log(Price)
