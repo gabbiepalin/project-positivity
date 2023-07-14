@@ -20,7 +20,7 @@ console.log(result) */
 var x = 100
 var y = 50
 
-console.log(getSum(x,y));
+// console.log(getSum(x,y));
 
 function getSum (n1, n2){
     var sum = n1 + n2
@@ -28,3 +28,17 @@ function getSum (n1, n2){
 }
 var sum1 = getSum(x, y)
 var sum2 = getSum(10, 5)
+
+const limit = 50; // Define the limit
+
+for (let number = 1; number <= limit; number++) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (number % 3 === 0) {
+    console.log("Fizz");
+  } else if (number % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(number);
+  }
+}
